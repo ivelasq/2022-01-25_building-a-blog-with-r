@@ -1,0 +1,326 @@
+---
+format:
+  revealjs:
+    footer: "Isabella Velásquez, RStudio"
+    transition: slide
+resources:
+  - img/img1.png
+  - img/front.png
+  - img/blog.png
+  - img/wiki.png
+  - img/forum.png
+  - img/blogs.png
+  - img/diataxis.png
+  - img/blogdown.png
+  - img/distill.png
+---
+
+## {background-color="black" background-image="img/front.png"}
+
+--
+
+# About Me
+
+## Isabella Velásquez
+
+Sr. Product Marketing Manager, RStudio.<br>
+I'd love to share your data science story on the RStudio blog!
+
+* isabella.velasquez@rstudio.com
+* Website: ivelasq.rbind.io
+* Twitter: @ivelasq3
+* Github: @ivelasq
+* LinkedIn: @ivelasq
+
+![](img/img1.png){.absolute bottom=0 right=50 width="300" height="300"}
+
+::: {.notes}
+Hi everybody, really nice to meet you! My name is Isabella Velásquez, I have the great pleasure of working with Rachael at RStudio. Just a little bit about me, I am a Senior Product Marketing Manager, and currently focus on the strategy and content creation for the RStudio blog. It has been an amazing almost-five months and I have had the great opportunity to work with others at RStudio and in the data science community. As such, I would love to hear your compelling data science story and collaborate on posts on the RStudio blog. If you are interested, please reach out to me anytime! We can brainstorm together if you're looking for ideas, or collaborate on something you were already thinking about. 
+
+Just a bit more about me, in my free time, I am very active in the R community and am a proud R-Ladies Seattle co-organizer and sometimes I post on my personal blog as well on topics like data cleaning and other data science things. My very first R-Ladies talk was actually on the blogdown package, way back in 2018, so I am very excited to get to talk again about building a blog with R!
+:::
+
+---
+
+## Intro Question{background-color="#447099"}
+<br>
+<center>What is your favorite data science or technical blog?</center>
+
+::: {.notes}
+First up, I’d love to hear from you — do you have any data science or technical blogs that you love to read? Please put them in the chat and share why! 
+:::
+
+---
+
+# Agenda
+
+::: {.incremental}
+
+- Why create a blog
+- Deciding on topics
+- Considerations
+- Tools for creating a blog
+
+:::
+
+::: {.notes}
+Today’s agenda that we will be going through is: possible reasons for creating a blog, the considerations you need to take into place for a blog, how to decide on topics, and tools for building your blog with R.
+:::
+
+---
+
+## Resources{background-color="#447099"}
+
+<center>Available at<br> https://github.com/ivelasq/2022-01-25_building-a-blog-with-r</center>
+
+::: {.notes}
+I’ve put everything up in this repository so that the resources and slides are easy to find. If you have questions, please put them in the chat and we can discuss at the end!
+:::
+
+---
+
+## Types of Websites{background-color="#447099"}
+
+::: {.incremental}
+
+![](img/blog.png){.absolute top=200 left=0 width="350" height="300"}
+
+![](img/wiki.png){.absolute top=100 right=380 width="300"}
+
+![](img/forum.png){.absolute bottom=0 right=50 width="300" height="300"}
+
+:::
+
+::: {.notes}
+So, while the title of the talk is building a blog with R, we are going to talk a bit more generally about different forms of websites. A blog is a certain type of website that specifically has a reverse chronological order where newer content appears first, and sometimes allows for comments, and can be indexed and syndicated on RSS feeds. While some website pages can be quite static, and are not updated frequently, a blog is dynamic, and is usually updated pretty often. There are also other forms of websites that support dialogue and are libraries of knowledge, such as wikis and forums, but blogs specifically adds time as a factor to consider as they will only be successful with continuous engagement and creation. The type of content is different too, more real-time to events and more of an opinion rather than reference, which we will get into as well. Again, while we’ll be talking about blogs specifically, know that these tools actually build other forms of websites as well.
+:::
+
+---
+
+## Why create a blog?{background-color="#447099"}
+
+::: {.notes}
+We should also talk about why we create a blog. I’d like to share some insights I’ve gleaned from really amazing talks by David Robinson, Maëlle Salmon, Rebecca Barter, Alison Hill, and Vicki Boykis and many others on this topic, and I have a link to a YouTube playlist in the repo for you so that you can watch them as well. You may have heard David Robinson’s advice, that if you’ve shared something three times, it’s time to write a blog post about it.
+:::
+
+---
+
+# Why create a blog?
+
+## It's time to share what you know!
+<br>
+<center><blockquote class="twitter-tweet"><p lang="en" dir="ltr">When you’ve written the same code 3 times, write a function<br><br>When you’ve given the same in-person advice 3 times, write a blog post</p>&mdash; David Robinson (@drob) <a href="https://twitter.com/drob/status/928447584712253440?ref_src=twsrc%5Etfw">November 9, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></center>
+
+## Collaboration
+
+::: {.incremental}
+
+- Share what you've learned
+- Write about your opinions
+- Give updates and news
+
+:::
+
+## Communication
+
+::: {.incremental}
+- Practice writing
+- Create a portfolio of work
+- Centralization of information
+
+:::
+
+::: {.notes}
+In terms of the soft skills needed for data scientists, a blog can help showcase collaboration and communication skills. A blog provides a platform to share what you’ve learned, like packages that you’ve tried or created, how-to’s and or other processes, write about your opinions, give updates and news, and so much more. [click] You can practice writing for someone other than yourself. It can form a type of portfolio that makes it easy to share. And, since it’s in one place, it allows for centralization of your work, rather than having it in different spots.
+:::
+
+---
+
+## Why have an *external* blog?
+<br>
+<br>
+<br>
+<center>![](img/blogs.png)</center>
+
+::: {.notes}
+So usually we talk about reasons behind creating a personal blog, especially if you’re looking for a job. But I also want to note that your team or organization could benefit from having a blog. External blogs, like the ones we have at RStudio, are examples of these. Quick aside, just so you are aware, we currently have four blogs: the RStudio Blog, the AI blog with the latest news, insights, and examples of using AI-related technologies and whose website is built with Distill, which we'll talk about later, the RViews blog, which is built with blogdown, and the tidyverse blog, which uses hugodown, which focuses just on Hugo whereas blogdown lets you use other static generators. So RStudio uses R in many ways to build blogs!
+:::
+
+---
+
+## Why have an external blog?
+
+- [Keep everybody up-to-date with news and events](https://www.rstudio.com/blog/rstudio-community-monthly-events-january-2022/)
+- [Share stories from others to show what's possible](https://www.rstudio.com/blog/how-the-clusterbuster-shiny-app-helps-battle-covid-19-in-the-netherlands/)
+- [Provide thought leadership](https://www.rstudio.com/blog/the-advantages-of-code-first-data-science/)
+
+::: {.notes}
+Our blogs keep the community up-to-date with events and product updates. We share stories from others who use tools, such as Shiny or pins, to show what’s possible with them in a variety of contexts. And we also share things like what RStudio’s stance is on different topics, like interoperability between R and Python or how code-first development is uniquely important for data science work. [go through each link]
+:::
+
+---
+
+## Why have an internal blog?
+
+::: {.incremental}
+
+- Share information more easily and effectively
+- Improve collaboration
+- ... resulting in a community for your colleagues
+
+### Differences between an internal and external blog
+
+- Audience
+- Search engine optimization
+
+:::
+
+::: {.notes}
+In addition to an external site, you could consider an internal blog as well. As this is an R Enterprise Community Meetup, this is the use case we’ll be mostly focusing on today. Internal blogs can help you share information between team members in an easier and more efficient way. Have you ever tried to find some advice that your colleague sent you in an email? It can be really hard to find! With a blog, key information can be in one place and searchable with tags. So this speeds up communication since everything is organized within your blog, serving as a sort of bulletin board of ongoing projects and news. Folks can search for information from the past while easily seeing what is the newest info.
+
+It gives your colleagues the opportunity to collaborate and share their knowledge if they know there’s a place that they can go to when they have something they want to share. Folks’ thoughts can be shared very quickly to many people, rather than being siloed in conversations or in email. And others can learn about what their teammates are thinking about.
+
+And ideally, it can foster a community that is open and inclusive, as well as share the message that all of you care about others’ work and opinions.
+
+An internal blog is a little different than an external blog. You don’t have to worry about things like keywords or searchability. Your audience is confined to those in the org and you know exactly how to find them. The topics can be a little more flexible rather than just your company or products, as well.
+:::
+
+---
+
+## Types of posts {.scrollable}
+
+* Standard lists
+* Profiles
+* How-to/tutorials
+* News posts
+* Problems-and-solutions
+* Case studies
+* Comparison posts
+* Stories
+* Open questions
+* Inspiration
+* Research
+* FAQ
+* Reviews
+* Interviews
+* Cheat sheets
+* Checklists
+* Infographics
+* Debates
+* Presentations
+
+::: footer
+Source: [Problogger](https://problogger.com/52-types-of-blog-posts-that-are-proven-to-work/)
+:::
+
+::: {.notes}
+What types of posts could you consider for your internal blog? This very much depends on your goals, the sorts of information that your team finds useful. However, let’s say we want to create a blog for an internal data science community.  So, topics for your data science community can include reflections on projects with the summary of events, how things went, lessons learned, and where to find outputs. They can be virtual proposals for feedback and review. And of course, things like news and updates are well-suited to blog posts as well. But, as you can see, there are many different types of blog posts.[scroll down]
+
+And then, besides types, is the content of blog posts that you want to create. Blog posts are about finding a sweet spot in terms of length, media (like text articles, images, photos, infographics, videos, podcasts, and other media that resonate with your audience. There are so many different types, and again, since this is internally-facing, you don’t have to worry so much about optimization but it’s of course useful to have engaging content. Also, blog posts can be forums for discussions, like if you have comments available on your posts.
+:::
+
+---
+
+## {background-color="black" background-image="img/diataxis.png"}
+
+::: footer
+Source: [Diátaxis Framework](https://diataxis.fr/#)
+:::
+
+::: {.notes}
+One thing I want to mention is that a blog is not the place for absolutely everything.  This is a chart from the Diátaxis Framework which provides structure in technical documentation. A successful technical team needs a mix of all of these: tutorials, how-to, explanation, and reference. It’s important to consider whether a blog is the right spot for a particular type of documentation,  whether it should be stored and shared from another location, or if it makes sense to write a blog post about it and then save it more permanently elsewhere, or write a blog post on some existing content to raise awareness about it and point people to it for future reference.
+:::
+
+---
+
+## What do you need?{background-color="#447099"}
+
+::: {.incremental}
+
+* Goals and purpose
+* Values
+* Helpful and relevant content
+* Guardrails
+* Buy-in and ownership
+* Norms and feedback
+* Workflow and maintenance
+* Technical stuff, too!
+
+:::
+
+::: {.notes}
+What do you need to consider when building an internal blog?
+[click] First of all, why do you want to create an internal blog? Are you hoping to get viewership for just your team or do you want others outside of your team at your organization to be interested as well? Are you hoping that it stays about work or is it an opportunity to get to learn more about the more personal experiences of others? Having a clear goal can help you develop your blog and explain to others its purpose as well.
+[click] Related to your goals are the values that you want to instill in your blog. If it’s meant to be a place for inclusivity, openness, and motivation, then you want to make sure the content of your blog demonstrates your values, and that your colleagues are aware of the values as well.
+[click] Another thing to consider is what would be valuable and relevant content. What sort of content would be helpful to share and that your readers would actually read? For an internal data science community, what would be interesting to check out regularly for your teammates? Key to success is knowing what others would find valuable and relevant, and making sure that is what is put on the blog.
+[click] Like we mentioned before, we don't want a blog to confuse people because of other forms of documentation that already exist. So it’s important to know what’s in, what’s out of your blog, the tone, style, and voice that it will have, what sort of content is within the guardrails and what is not. Of course, as time goes on and you learn more, things may change, but having these in place can help you meet your goals.
+[click] Ideally, you can get your colleagues involved in content creation. This way, you can showcase many different voices and perspectives, and keep your blog updated with diverse ideas, opinions, and skill sets. Of course, this means that your colleagues must be excited to be involved and share their work, which can be done through direct invitation but it helps if you have firm values and great content for your blog that encourages collaboration.
+
+Another thing to note is that you want to get buy-in for the blog, not just from your teammates but your leadership team as well. Since it takes time to create content, you may have to make the case that it is worth the time and effort of not just you but your whole team to keep a frequently-updated blog. This is done through the creation of valuable content — work that makes it interesting, useful, and applicable to others, and being able to communicate and demonstrate the value to the higher-ups.
+[click] With inviting folks to collaborate, you want to make sure that your blog reflects your values: that if it’s meant to be someplace inclusive, that you don’t unintentionally exclude folks with the topics or responses. Getting consistent feedback can help determine if the blog is truly benefiting the team and reflecting the values you put in place.
+[click] Related to ownership, you want the blog to be part of the routine of your work so that it doesn’t feel like a big imposition or burden. Perhaps your coworkers have just given a conference talk or you just had a big strategy meeting. Can a blog be part of the workflow so that it regularly produces content? If creating content can be something that’s already integrated, then it’s a lot easier.
+[click] And finally, there’s the technical aspect of building a blog. You don’t want this to be something that disappears once a particular person is gone. Hopefully, you can build the skills and infrastructure across your team to keep it going.
+:::
+
+---
+
+### Building a Blog With R
+
+::: {.incremental}
+* Knowledge of R and R Markdown
+* Version control
+* Hosting
+:::
+
+::: {.notes}
+To build a blog with R, you’ll need to use skills like R and R Markdown, and make sure that your team has those skills as well or at least a workflow in place to get them help if they do not. While you don’t need a system like Github, it’s very, very helpful to have. Version control helps resolve issues like conflicts in the pages of a website, and also helps keep track of changes and when they happened. And then, of course, you need a place to deploy your site. If this is an internal site, you may want to have it secure either on your own server or behind a password like on RStudio Connect or Netlify.
+:::
+
+---
+
+## Today's Demos
+<br>
+<br>
+<center>
+::: {.column width="40%"}
+![](img/blogdown.png){width="200"}
+:::
+
+::: {.column width="40%"}
+![](img/distill.png){width="200"}
+:::
+
+</center>
+::: {.notes}
+Blogdown is an R package that creates websites using R Markdown and Hugo, a static website generator, by default, but it allows you to use other site generators like Jekyll as well. Distill for R Markdown is a web publishing format optimized for scientific and technical communication that uses Pandox and the Distill frameworks to create websites. We'll be taking a look at these two packages and seeing what a blog looks like.
+
+So, how to decide between blogdown or distill? There are a few factors. If you want to be able to configure your site a lot, then blogdown would be the way to go. Distill is more minimal where you can only edit a few things like color and font and use one theme, whereas with blogdown themes give you a lot of options, even using something besides Hugo as your site generator. However, this means that blogdown is less stable than Distill since you have to depend on your theme or your Hugo version.
+
+So now, I will stop sharing my screen for a second to switch over to RStudio...
+:::
+
+---
+
+## Open call
+
+Do you have a story to share about data science?
+
+::: {.incremental}
+
+Consider contributing to the RStudio Blog!
+
+*  [Building Code Movies With flipbookr](https://www.rstudio.com/blog/building-code-movies-with-flipbookr/)
+* [RStudio Cloud: An inclusive solution for learning R](https://www.rstudio.com/blog/rstudio-cloud-an-inclusive-solution-for-learning-r/)
+* [How do you use Shiny to communicate to 8 million people?](https://www.rstudio.com/blog/how-do-you-use-shiny-to-communicate-to-8-million-people/)
+
+:::
+
+Reach out to isabella.velasquez@rstudio.com.
+
+---
+
+# Thank you!{background-color="#447099"}
+
+* Twitter: @ivelasq3
+* Github: @ivelasq
+* LinkedIn: @ivelasq
