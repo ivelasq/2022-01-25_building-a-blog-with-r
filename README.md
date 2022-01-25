@@ -13,3 +13,4 @@ R Enterprise Community Meetup on Building a Blog With R
 
 * [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/)
 * [Hugo Apéro](https://hugo-apero-docs.netlify.app/)
+* [A Blogdown New Post Workflow with Github and Netlify](https://www.garrickadenbuie.com/blog/blogdown-netlify-new-post-workflow/)
