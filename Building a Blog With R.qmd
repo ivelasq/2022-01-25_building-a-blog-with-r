@@ -97,14 +97,6 @@ So, while the title of the talk is building a blog with R, we are going to talk 
 
 ---
 
-## Why create a blog?{background-color="#447099"}
-
-::: {.notes}
-We should also talk about why we create a blog. I’d like to share some insights I’ve gleaned from really amazing talks by David Robinson, Maëlle Salmon, Rebecca Barter, Alison Hill, and Vicki Boykis and many others on this topic, and I have a link to a YouTube playlist in the repo for you so that you can watch them as well. You may have heard David Robinson’s advice, that if you’ve shared something three times, it’s time to write a blog post about it.
-:::
-
----
-
 # Why create a blog?
 
 ## It's time to share what you know!
@@ -131,6 +123,8 @@ We should also talk about why we create a blog. I’d like to share some insight
 :::
 
 ::: {.notes}
+We should also talk about why we create a blog. I’d like to share some insights I’ve gleaned from really amazing talks by David Robinson, Maëlle Salmon, Rebecca Barter, Alison Hill, and Vicki Boykis and many others on this topic, and I have a link to a YouTube playlist in the repo for you so that you can watch them as well. You may have heard David Robinson’s advice, that if you’ve shared something three times, it’s time to write a blog post about it.
+
 In terms of the soft skills needed for data scientists, a blog can help showcase collaboration and communication skills. A blog provides a platform to share what you’ve learned, like packages that you’ve tried or created, how-to’s and or other processes, write about your opinions, give updates and news, and so much more. [click] You can practice writing for someone other than yourself. It can form a type of portfolio that makes it easy to share. And, since it’s in one place, it allows for centralization of your work, rather than having it in different spots.
 :::
 
