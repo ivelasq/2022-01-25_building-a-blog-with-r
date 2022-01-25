@@ -13,13 +13,23 @@ R Enterprise Community Meetup on Building a Blog With R
 * [Building a blog with distill by Tom Mock](https://themockup.blog/posts/2020-08-01-building-a-blog-with-distill/)
 * [(Re-)introducing Distill for R Markdown](https://www.rstudio.com/blog/distill/)
 
+### Getting Started
+
+```
+# Install packages
+install.packages("distill”)
+
+# Create a new site
+library(distill)
+create_blog(dir = "my-blog", title = "My Blog")
+```
+
 ## Blogdown Resources
 
 * [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/)
 * [Hugo Themes](https://themes.gohugo.io/)
 * [Hugo Apéro](https://hugo-apero-docs.netlify.app/)
 * [A Blogdown New Post Workflow with Github and Netlify](https://www.garrickadenbuie.com/blog/blogdown-netlify-new-post-workflow/)
-
 
 ### Getting Started
 
