@@ -5,9 +5,9 @@ account: isabella.velasquez
 server: colorado.rstudio.com
 hostUrl: https://colorado.rstudio.com/rsc/__api__
 appId: 10654
-bundleId: 52808
+bundleId: 52822
 url: https://colorado.rstudio.com/rsc/building-a-blog-with-r/
-when: 1643124331.68215
-lastSyncTime: 1643124331.68215
+when: 1643134613.97719
+lastSyncTime: 1643134613.9772
 asMultiple: FALSE
 asStatic: TRUE
