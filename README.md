@@ -38,6 +38,7 @@ create_blog(dir = "my-blog", title = "My Blog")
 ```
 # Install packages
 install.packages("blogdown")
+blogdown::install.hugo(version = "0.79.1")
 
 # Create a new site
 library(blogdown)
