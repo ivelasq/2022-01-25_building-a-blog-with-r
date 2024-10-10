@@ -3,7 +3,7 @@ R Enterprise Community Meetup on Building a Blog With R
 
 ## Today's Presentation
 
-* [Slides](https://colorado.rstudio.com/rsc/building-a-blog-with-r/)
+* [Slides](https://connect.posit.cloud/ivelasq/content/01927710-4983-b418-c89f-81bdade6499b)
 
 ## [YouTube Playlist](https://youtube.com/playlist?list=PLXKlQEvIRus-qu1hjc8SyElSamAcT-KaE)
 
